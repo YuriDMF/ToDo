@@ -26,7 +26,7 @@ function Login() {
         <div className="w-md justify-center shadow-lg shadow-black/25 bg-zinc-800 px-10 py-10 mx-auto mt-30 rounded-2xl">
             <CardAuthHeader title="Welcome Back!" subtitle="Let’s build something great"/>
             <form className="mt-10">
-                <Label>E-mail or Nickname</Label>
+                <Label>E-mail</Label>
                 <Input
                     type="text"
                     placeholder="Please enter your email"
@@ -39,12 +39,12 @@ function Login() {
                     icon={Lock}
                 />
                 <div className="text-end text-blue-200 text-xs">
-                    <a href="">Forgot Password?</a>
+                    <Link to="">Forgot Password?</Link>
                 </div>
                 <Button type="submit" className="w-full">LogIn</Button>
             </form>
             <div className="text-center text-neutral-200 mt-10">
-                Don't have an account? <span className="text-blue-500"><a href="/signup">Sign up</a></span>
+                Don't have an account? <span className="text-blue-500 hover:text-blue-500/90"><Link to="/signup">Sign up</Link></span>
             </div>
         </div >
     );
