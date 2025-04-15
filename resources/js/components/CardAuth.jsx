@@ -31,7 +31,7 @@ function CardAuth() {
                 <Button type="submit" className="w-full">LogIn</Button>
             </form>
             <div className="text-center text-neutral-200 mt-10">
-                Don't have an account? <span className="text-blue-500"><a href="">Sign up</a></span>
+                Don't have an account? <span className="text-blue-500"><a href="/signup">Sign up</a></span>
             </div>
         </div >
     );
