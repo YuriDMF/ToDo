@@ -4,6 +4,7 @@ import { useEffect } from "react";
 import Button from "../components/Button";
 import Input from "../components/Input";
 import Label from "../components/Label";
+import CardAuthHeader from '../components/CardAuthHeader';
 
 import { Mail, Lock } from "lucide-react";
 
@@ -23,11 +24,7 @@ function Login() {
     }, []);
     return (
         <div className="w-md justify-center shadow-lg shadow-black/25 bg-zinc-800 px-10 py-10 mx-auto mt-30 rounded-2xl">
-            <div className="text-center">
-                <img src="/img/brand.png" className="w-[50px] mb-10 mx-auto" />
-                <h1 className="text-neutral-100 text-3xl font-medium mb-2">Welcome Back!</h1>
-                <span className="text-neutral-400">Let’s build something greate</span>
-            </div>
+            <CardAuthHeader title="Welcome Back!" subtitle="Let’s build something great"/>
             <form className="mt-10">
                 <Label>E-mail or Nickname</Label>
                 <Input
