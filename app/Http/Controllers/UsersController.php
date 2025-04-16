@@ -22,7 +22,5 @@ class UsersController extends Controller
             'email' => $request->email,
             'password' => Hash::make($request->password),
         ]);
-
-        return response()->json(['message' => 'Usuário registrado com sucesso!']);
     }
 }
